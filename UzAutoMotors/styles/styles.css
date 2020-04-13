@@ -1,0 +1,419 @@
+/****************************************/
+/*  "*" refers to anything in the site */
+/****************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: white;
+  color: #555;
+  font-family: Lato, sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+/****************************************/
+/*  Logo and Link to home page */
+/****************************************/
+.logo-company {
+  width: 170px;
+  height: 60px;
+  margin-top: 4px;
+}
+/****************************************/
+/* width of the whole web page */
+/****************************************/
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/****************************************/
+/* Navigation bar  */
+/****************************************/
+.sticky {
+  position: fixed;
+  width: 100%;
+  background: black;
+  padding: 5px 200px;
+  opacity: 0.8;
+}
+nav li {
+  list-style: none;
+  display: inline;
+  padding-right: 25px;
+}
+
+nav ul {
+  float: right;
+  margin-top: 24px;
+}
+nav ul a:hover {
+  text-decoration: none;
+  font-size: 110%;
+  border-bottom: solid 1px;
+  padding-bottom: 5px;
+  transition: border-bottom;
+  transition-duration: 5s;
+}
+nav ul a {
+  text-decoration: none;
+  font-size: 110%;
+  color: rgb(255, 240, 255);
+}
+.current-page {
+  color: wheat;
+}
+
+/****************************************/
+/* intro page of the website*/
+/****************************************/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.692)),
+    url(images/back1.png); /* (2020). Ravonauto.md. Available from https://ravonauto.md/wp-content/uploads/2018/02/R4_Ravon_2-1920x1000.png [Accessed 2 March 2020].*/
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header h1 {
+  color: aliceblue;
+  padding-top: 280px;
+  padding-bottom: 0px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 15px;
+  font-weight: 300;
+  font-size: 50px;
+}
+header p {
+  margin: 5px;
+  padding: 0;
+  font-size: 17px;
+  color: rgb(183, 194, 204);
+}
+
+h2 {
+  font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 10px;
+  text-align: center;
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #555;
+  width: 200px;
+  content: ' ';
+  margin: 30px auto 80px auto;
+  letter-spacing: 1px;
+}
+/****************************************/
+/* tour page of the website*/
+/****************************************/
+.excursion p {
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+  word-spacing: 5px;
+  line-height: 150%;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.factory img {
+  width: 95%;
+  margin-left: 2.5%;
+  border-radius: 15px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.factory p a:hover,
+.factory a:active {
+  text-decoration: none;
+  color: #555;
+  font-size: 21px;
+  font-weight: 400;
+  border-bottom: solid 1px;
+  transition: border 5s, font-weight 0.2s;
+}
+.factory p a:link,
+.factory a:visited {
+  color: #555;
+  text-decoration: none;
+  font-size: 21px;
+}
+.factory p {
+  text-align: center;
+  width: 100%;
+}
+/****************************************/
+/* about the company page of the website*/
+/****************************************/
+article h2 {
+  margin-top: 60px;
+}
+article h2::after {
+  margin-bottom: 40px;
+}
+.info-com h3 {
+  font-weight: 300;
+  margin: 25px 0 7px 0;
+  color: black;
+}
+.info-com p {
+  width: 90%;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+article img {
+  width: 560px;
+  height: 350px;
+  margin-top: 25px;
+  margin-right: 40px;
+}
+#malibu {
+  width: 450px;
+  height: auto;
+  margin-left: 40px;
+}
+/****************************************/
+/* FOOTER and some other information */
+/****************************************/
+footer {
+  margin-top: 50px;
+  background-image: linear-gradient(
+    rgba(29, 28, 28, 0.925),
+    rgba(15, 15, 15, 0.918)
+  );
+}
+footer img {
+  width: 120px;
+  display: block;
+  margin-bottom: 10px;
+}
+h4 {
+  color: aliceblue;
+  font-weight: 300;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+footer a:hover,
+footer a:active {
+  text-decoration: none;
+  font-size: 110%;
+  border-bottom: solid 1px;
+  padding-bottom: 5px;
+  transition: border-bottom;
+  transition-duration: 5s;
+}
+footer a {
+  text-decoration: none;
+  font-size: 110%;
+  color: white;
+}
+
+footer ul {
+  text-decoration: none;
+  margin-top: 50px;
+}
+footer li {
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+  text-align: justify;
+  list-style: none;
+}
+footer p {
+  font-size: 16px;
+  color: rgb(117, 114, 114);
+  padding-bottom: 5px;
+  display: inline-block;
+}
+h5 {
+  font-weight: 300;
+  color: aliceblue;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+/****************************************/
+/* copyright page of the website*/
+/****************************************/
+.copy {
+  background: rgb(34, 33, 33);
+  padding-bottom: 25px;
+}
+.copy p {
+  color: white;
+  font-size: 16px;
+  padding-top: 20px;
+}
+.copy a:visited,
+.copy a:link {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+.copy a:hover,
+.copy a:active {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  border-bottom: solid 1px;
+  padding-bottom: 5px;
+  transition: border-bottom;
+  transition-duration: 5s;
+}
+/****************************************/
+/* PRODUCTS*/
+/****************************************/
+.products-intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.692)),
+    url(images/back2.jpg); /* (2020). Autostrada.uz. Available from https://www.autostrada.uz/wp-content/uploads/2019/08/chevrolet-malibu-2019-facelift-gm-uzbkistan-uzauto-motors.jpg [Accessed 2 March 2020]. */
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.cars-description p {
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+  word-spacing: 5px;
+  line-height: 150%;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.cars img {
+  width: 270px;
+
+  border-radius: 15px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.cars p a:hover,
+.cars a:active {
+  text-decoration: none;
+  color: #555;
+  font-size: 21px;
+  font-weight: 400;
+  border-bottom: solid 1px;
+  transition: border 5s, font-weight 0.2s;
+}
+.cars p a:link,
+.cars a:visited {
+  color: #555;
+  text-decoration: none;
+  font-size: 21px;
+}
+.cars p {
+  text-align: center;
+  width: 100%;
+}
+.news iframe {
+  width: 90%;
+  height: 350px;
+  margin-left: 5%;
+}
+/****************************************/
+/* services */
+/****************************************/
+.services-intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.692)),
+    url(images/back3.jpg); /*(2020). All-test-drives.com. Available from http://all-test-drives.com/uploads/posts/2016-04/1460724271_ravon-nexia-01.jpg [Accessed 2 March 2020]. */
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.service-1 p {
+  text-align: justify;
+  line-height: 160%;
+  width: 900px;
+  margin: 0 auto;
+}
+.official-app-section img {
+  width: 400px;
+  height: auto;
+}
+.official-app p {
+  font-weight: 400;
+  text-align: right;
+  padding-top: 70px;
+}
+.btn-app img {
+  float: right;
+  width: 150px;
+  margin-top: 25px;
+  padding-left: 10px;
+}
+/****************************************/
+/* Contacts */
+/****************************************/
+.contact-intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.692)),
+    url(images/back4.jpg); /* (2020). Tazinfo.ru. Available from http://tazinfo.ru/wp-content/uploads/2016/09/chm1.2.jpg [Accessed 2 March 2020]. */
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.table {
+  background-color: rgba(199, 198, 198, 0.557);
+  padding: 10px 50px;
+  margin: 20px auto;
+  margin-bottom: 100px;
+  text-align: center;
+  width: 600px;
+}
+
+.btns {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px white solid;
+  padding: 8px 80px;
+  font-size: 15px;
+  background-color: rgb(128, 128, 128);
+  border-radius: 10px;
+}
+.btns:hover {
+  color: rgb(25, 25, 25);
+  background-color: white;
+  transition: all 0.3s ease-in;
+}
+
+.txtb {
+  border: 1px solid white;
+  margin: 20px 0;
+  padding: 15px 18px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.txtb label {
+  display: block;
+  text-align: left;
+  font-size: 20px;
+}
+
+.txtb input,
+.txtb textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 14px;
+}
